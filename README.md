@@ -23,8 +23,8 @@ Lecturer: 林柏宏
 
 ## PA
 * PA1 Maximum Planar Subset
-* PA2
+* PA2 Routing
 
 ## Exam
-* 2025 mid
-* 2025 final
+* 2025 Mid
+* 2025 Final
