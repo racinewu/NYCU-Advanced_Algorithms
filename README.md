@@ -1,1 +1,30 @@
-# NYCU-Advanced_Algorithms
+# NYCU-Advanced Algorithms
+
+NYCU 2025 Spring Advanced Algorithms
+
+Lecturer: 林柏宏
+
+## Lecture
+* Intro
+* Sorting
+* Tree
+* DP
+* Greedy
+* Amortize
+* Disjoint
+* Graph
+* NPC
+
+## HW
+* HW1
+* HW2
+* HW3
+* HW4
+
+## PA
+* PA1 Maximum Planar Subset
+* PA2
+
+## Exam
+* 2025 mid
+* 2025 final
