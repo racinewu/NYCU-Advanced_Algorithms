@@ -22,7 +22,7 @@ Lecturer: 林柏宏
 * HW4
 
 ## PA
-* PA1 Maximum Planar Subset [](/PA/PA1)
+* PA1 Maximum Planar Subset [README](/PA/PA1/README.md)
 * PA2 Single Layer Routing
 
 ## Exam
