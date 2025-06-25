@@ -15,13 +15,13 @@ Lecturer: 林柏宏
 * Graph
 * NPC
 
-## HW
+## Homework
 * HW1
 * HW2
 * HW3
 * HW4
 
-## PA
+## Programming Assignment
 * PA1 Maximum Planar Subset [README](/PA/PA1/README.md)
 * PA2 Single Layer Routing
 
