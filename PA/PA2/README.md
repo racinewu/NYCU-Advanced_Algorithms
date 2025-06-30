@@ -68,43 +68,32 @@ To solve/verify all testcase
 ```
 ## Experiment
 <p align="center">
-<figure style="display: flex; flex-direction: column; align-items: center;">
-  <img src="images/congestion.svg" alt="Routing Result" style="width: 700px; height: auto;">
-  <figcaption>Figure 1. Routing result for congestion</figcaption>
-</figure>
-<p>
+  <img src="images/congestion.svg" alt="Routing Result" width="700">
+</p>
+<p align="center"><em>Figure 1. Routing result for <code>congestion</code></em></p>
 
 <p align="center">
-<figure style="display: flex; flex-direction: column; align-items: center;">
-  <img src="images/in_turn.svg" alt="Routing Result" style="width: 700px; height: auto;">
-  <figcaption>Figure 2. Routing result for in_turn</figcaption>
-</figure>
-<p>
+  <img src="images/in_turn.svg" alt="Routing Result" width="700">
+</p>
+<p align="center"><em>Figure 2. Routing result for <code>in_turn</code></em></p>
 
 <p align="center">
-<figure style="display: flex; flex-direction: column; align-items: center;">
-  <img src="images/sample.svg" alt="Routing Result" style="width: 700px; height: auto;">
-  <figcaption>Figure 3. Routing result for sample</figcaption>
-</figure>
-<p>
+  <img src="images/sample.svg" alt="Routing Result" width="700">
+</p>
+<p align="center"><em>Figure 3. Routing result for <code>sample</code></em></p>
 
 <p align="center">
-<figure style="display: flex; flex-direction: column; align-items: center;">
-  <img src="images/shortest_path.svg" alt="Routing Result" style="width: 700px; height: auto;">
-  <figcaption>Figure 4. Routing result for shortest_path</figcaption>
-</figure>
-<p>
+  <img src="images/shortest_path.svg" alt="Routing Result" width="700">
+</p>
+<p align="center"><em>Figure 4. Routing result for <code>shortest_path</code></em></p>
 
 <p align="center">
-<figure style="display: flex; flex-direction: column; align-items: center;">
-  <img src="images/trade_off.svg" alt="Routing Result" style="width: 700px; height: auto;">
-  <figcaption>Figure 5. Routing result for trade_off</figcaption>
-</figure>
-<p>
+  <img src="images/trade_off.svg" alt="Routing Result" width="700">
+</p>
+<p align="center"><em>Figure 5. Routing result for <code>trade_off</code></em></p>
 
 <p align="center">
-<figure style="display: flex; flex-direction: column; align-items: center;">
-  <img src="images/trap.svg" alt="Routing Result" style="width: 700px; height: auto;">
-  <figcaption>Figure 6. Routing result for trap</figcaption>
-</figure>
-<p>
+  <img src="images/trap.svg" alt="Routing Result" width="700">
+</p>
+<p align="center"><em>Figure 6. Routing result for <code>trap</code></em></p>
+
