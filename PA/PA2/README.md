@@ -67,32 +67,32 @@ To solve/verify all testcase
 ./evaluator.sh
 ```
 ## Experiment
-<figure style="text-align: center;">
-  <img src="images/congestion.svg" alt="Routing Result" style="width:800px; height:auto;">
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="images/congestion.svg" alt="Routing Result" style="width: 700px; height: auto;">
   <figcaption>Figure 1. Routing result for congestion</figcaption>
 </figure>
 
-<figure style="text-align: center;">
-  <img src="images/in_turn.svg" alt="Routing Result" style="width:800px; height:auto;">
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="images/in_turn.svg" alt="Routing Result" style="width: 700px; height: auto;">
   <figcaption>Figure 2. Routing result for in_turn</figcaption>
 </figure>
 
-<figure style="text-align: center;">
-  <img src="images/sample.svg" alt="Routing Result" style="width:800px; height:auto;">
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="images/sample.svg" alt="Routing Result" style="width: 700px; height: auto;">
   <figcaption>Figure 3. Routing result for sample</figcaption>
 </figure>
 
-<figure style="text-align: center;">
-  <img src="images/shortest_path.svg" alt="Routing Result" style="width:800px; height:auto;">
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="images/shortest_path.svg" alt="Routing Result" style="width: 700px; height: auto;">
   <figcaption>Figure 4. Routing result for shortest_path</figcaption>
 </figure>
 
-<figure style="text-align: center;">
-  <img src="images/trade_off.svg" alt="Routing Result" style="width:800px; height:auto;">
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="images/trade_off.svg" alt="Routing Result" style="width: 700px; height: auto;">
   <figcaption>Figure 5. Routing result for trade_off</figcaption>
 </figure>
 
-<figure style="text-align: center;">
-  <img src="images/trap.svg" alt="Routing Result" style="width:800px; height:auto;">
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="images/trap.svg" alt="Routing Result" style="width: 700px; height: auto;">
   <figcaption>Figure 6. Routing result for trap</figcaption>
 </figure>
