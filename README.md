@@ -23,7 +23,7 @@ Lecturer: 林柏宏
 
 ## Programming Assignment
 - PA1 Maximum Planar Subset [README](/PA/PA1/README.md)
-- PA2 Single Layer Routing
+- PA2 Single Layer Routing [README](/PA/PA2/README.md)
 
 ## Exam
 - 2025 Mid
