@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 {
     if (argc != 3)
     {
-        cerr << "Usage: " << argv[0] << " <input_file> <output_file>" << endl;
+        cerr << "Usage: ./bin/Chip_Router <input_file> <output_file>" << endl;
         return 1;
     }
     cout << "Reminder:\n - Set mode (0 or 1)\n - Adjust weights (alpha, beta, gamma) for mode 1\n\n";
