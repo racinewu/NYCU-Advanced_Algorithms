@@ -2,7 +2,7 @@
 
 NYCU 2025 Spring Advanced Algorithms
 
-Lecturer: 林柏宏
+Lecturer: 林柏宏 Mark Po-Hung Lin
 
 ## Lecture
 - Intro
