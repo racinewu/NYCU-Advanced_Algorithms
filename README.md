@@ -1,4 +1,4 @@
-# NYCU-Advanced Algorithms
+# NYCU-Advanced_Algorithms
 
 NYCU 2025 Spring Advanced Algorithms
 
