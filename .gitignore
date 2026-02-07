@@ -1,5 +1,8 @@
 Homework/
 Slides/
+bin/
+build/
 /*.pdf
 /*.docx
 /*.xlsx
+**/testcase/*.out
