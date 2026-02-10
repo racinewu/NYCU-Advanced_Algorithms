@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 {
     if (argc < 3)
     {
-        cerr << "Usage: ./program <input_file> <output_file>" << endl;
+        cerr << "Usage: ./bin/MPS <input_file> <output_file>" << endl;
         return 1;
     }
 
@@ -101,12 +101,15 @@ int main(int argc, char *argv[])
     }
     outfile << result << endl;
 
+#if DETAIL
     vector<pair<int, int>> selectedPairs;
     recover(0, maxIndex - 1, pairIndex, dp, selectedPairs);
 
     sort(selectedPairs.begin(), selectedPairs.end());
     for (auto &p : selectedPairs)
         outfile << p.first << " " << p.second << endl;
+#endif
+
     outfile.close();
 
     return 0;
