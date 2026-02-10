@@ -3,6 +3,7 @@ Slides/
 bin/
 build/
 /*.pdf
-/*.docx
-/*.xlsx
+*.docx
+*.xlsx
+*.zip
 **/testcase/*.out
