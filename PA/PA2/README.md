@@ -23,18 +23,20 @@ Given a 2D chip area with rectangular blockages and multiple interconnection pai
 
 
 ## Parameters
-- Mode (Random)  
-  - Attempts: 10000  
-  - Early stop (no improvement): 3000
-
-- Mode 1 (Weighted)  
-  - Score: alpha * Manhattan_distance + beta * Congestion + gamma * Edge_proximity
+- Mode 0 (Weighted)  
+  - Score: $\alpha \times Manhattan \ distance + \beta \times Congestion + \gamma \times Edge \ proximity$
   - alpha = 1.5
   - beta = 1.0
   - gamma = 0.5
 
+- Mode 1 (Random)  
+  - Attempts: 10000  
+  - Early stop (no improvement): 3000
+
+
 ## Input / Output Format
-## Input
+
+### Input
 **Input.in**
 
 ```
@@ -88,10 +90,11 @@ Interconnection 3: length = 23, #bends = 4
 (2, 4), (2, 5), (2, 6), (2, 7), (2, 8), (2, 9), (2, 10), (2, 11), (3, 11), (4, 11), (5, 11), (6, 11), (7, 11), (8, 11), (9, 11), (10, 11), (10, 10), (11, 10), (12, 10), (13, 10), (13, 9), (13, 8), (13, 7), (13, 6)
 ```
 
-## Environment:
-- OS: Ubuntu 22.04
-- Compiler: gcc 9.5
-- C++ Standard: C++17
+## Environment
+|  Operating System  |  Compiler Version  | C++ Standard |
+|--------------------|--------------------|--------------|
+| Ubuntu 22.04       |    gcc 9.5.0       |     C++17    |
+| Windows 11 (MSYS2) |    gcc 15.1.0      |     C++17    |
 
 
 ## Directory Structure
@@ -99,8 +102,9 @@ Interconnection 3: length = 23, #bends = 4
 PA2/
   ├── Makefile                    // Build script to compile the project
   ├── visualizer.py               // Python script to visualize routing result
+  ├── evaluator_pure_v1.py        // Checker to verify output correctness
   ├── evaluator-linux-x86_64-v3   // Executable to verify output correctness
-  ├── example/                    // Sample input (.in) files for quick testing or demo
+  ├── example/                    // Sample input files for quick testing or demo
   ├── testcase/                   // Official cases used for evaluation and scoring
   │
   ├── include/                    // Header files
@@ -113,10 +117,10 @@ PA2/
   │   ├── router.cpp              // Routing algorithm implementation
   │   └── solver.cpp              // Problem solver and result handling
   │
-  ├── build/                      // Object files (.o), created after make
+  ├── build/                      // Object (.o) and dependency (.d) files created during build
   ├── bin/                        // Final executable, e.g., bin/Chip_Router
   ├── run.sh                      // Shell script to run all testcases
-  ├── evaluator.sh                // Shell script to evaluate all results
+  │
   └── README.md
 ```
 
@@ -129,26 +133,26 @@ make
 ### How to execute
 Run the program with
 ```
-./bin/Chip_Router <input.in> <output.out>
+./bin/Chip_Router <input>.in <output>.out
 ```
 ### How to verify
 To verify the output with provided verifier
 ```
-./evaluator-linux-x86_64-v3 <input.in> <output.out>
+python3 evaluator_pure_v1.py <input>.in <output>.out  // Check for correctness
+./evaluator-linux-x86_64-v3 <input>.in <output>.out   // Check for correctness and ranking(not available now)
 ```
 ### How to plot
-To visualize the result (requires Python and matplotlib)
-
+To visualize the result (requires Python and matplotlib)  
 Color-coded path visualization to inspect routing quality
 ```
 python3 visualizer.py
 ```
 ### Utility Scripts
-To solve/verify all testcase
+To quickly run, clean, or verify testcases, use `run.sh`.
 ```
-./run.sh
-./evaluator.sh
+./run.sh <case|all> [check|clean|valgrind]
 ```
+
 ## Experiment
 <p align="center">
   <img src="images/congestion.svg" alt="Routing Result" width="800">
