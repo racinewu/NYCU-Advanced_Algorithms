@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
         cerr << "Usage: ./bin/Chip_Router <input_file> <output_file>" << endl;
         return 1;
     }
-    cout << "Reminder:\n - Set mode (0 or 1)\n - Adjust weights (alpha, beta, gamma) for mode 1\n\n";
+    cout << "Reminder:\n - Set mode (0 or 1)\n - Adjust weights (alpha, beta, gamma) for mode 0\n\n";
 
     try
     {
