@@ -4,6 +4,8 @@
 TESTCASE_DIR="testcase"
 TARGET="./bin/Chip_Router"
 CHECKER="python3 evaluator_pure_v1.py"
+VISUALIZER="python3 visualizer.py"
+IMAGE_DIR="images"
 
 # Colors
 BLUE="\033[34m"
@@ -20,14 +22,15 @@ log_missing() { printf "\n[${PURPLE}MISSING${RESET}] %s\n" "$1"; }
 
 usage() {
     cat <<EOF
-Usage: $0 <case|all> [check|clean|valgrind]
+Usage: $0 <case|all> [check|clean|draw|valgrind]
 
 Examples:
   $0 case1           # run a single case
   $0 all             # run all cases
   $0 case1 check     # check a single case
   $0 all clean       # clean all outputs
-  $0 case1 valgrind  # run with valgrind
+  $0 case1 draw      # draw the results
+  $0 all valgrind    # run with valgrind
 EOF
     exit 1
 }
@@ -90,6 +93,25 @@ clean_case() {
     fi
 }
 
+draw_case() {
+    local CASE=$1
+    local IN_FILE="$TESTCASE_DIR/${CASE}.in"
+    local OUT_FILE="$TESTCASE_DIR/${CASE}.out"
+    local IMG_FILE="$IMAGE_DIR/${CASE}.svg"
+
+    if [[ ! -f "$IN_FILE" ]]; then
+        log_error "$IN_FILE: No such case"
+        return
+    fi
+
+    mkdir -p "$IMAGE_DIR"
+
+    printf "\n"
+    log_info "Drawing case: $CASE ..."
+    $VISUALIZER "$IN_FILE" "$OUT_FILE" "$IMG_FILE"
+    log_info "Saved to $IMG_FILE"
+}
+
 # Check target existence unless cleaning
 if [[ "$2" != "clean" && ! -x "$TARGET" ]]; then
     log_error "$TARGET not found or not executable."
@@ -124,6 +146,8 @@ if [[ "$CASE" == "all" ]]; then
         casename=$(basename "$file" .in)
         if [[ "$MODE" == "check" ]]; then
             check_case "$casename"
+        elif [[ "$MODE" == "draw" ]]; then
+            draw_case "$casename"
         else
             run_case "$casename"
         fi
@@ -133,6 +157,8 @@ if [[ "$CASE" == "all" ]]; then
 else
     if [[ "$MODE" == "check" ]]; then
         check_case "$CASE"
+    elif [[ "$MODE" == "draw" ]]; then
+        draw_case "$CASE"
     else
         run_case "$CASE"
     fi
