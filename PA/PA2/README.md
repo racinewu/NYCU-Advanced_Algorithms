@@ -119,7 +119,7 @@ PA2/
   │
   ├── build/                      // Object (.o) and dependency (.d) files created during build
   ├── bin/                        // Final executable, e.g., bin/Chip_Router
-  ├── run.sh                      // Shell script to run all testcases
+  ├── run.sh                      // Shell script to manage testcases
   │
   └── README.md
 ```
@@ -148,9 +148,9 @@ Color-coded path visualization to inspect routing quality
 python3 visualizer.py
 ```
 ### Utility Scripts
-To quickly run, clean, or verify testcases, use `run.sh`.
+To manage testcases, use `run.sh`.
 ```
-./run.sh <case|all> [check|clean|valgrind]
+./run.sh <case|all> [check|clean|draw|valgrind]
 ```
 
 ## Experiment
