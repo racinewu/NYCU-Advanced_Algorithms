@@ -58,10 +58,10 @@ Given a set $C$ of $n$ chords in a circle, where endpoints are numbered from $0$
 ```
 PA1/
   ├── Makefile  // Build script to compile the project
-  ├── testcase  // testcase and golden answer
+  ├── dataset/  // testcase and golden answer
   ├── main.cpp
   ├── bin/      // Final executable, e.g., bin/MPS
-  ├── run.sh    // Shell script to run all testcases
+  ├── run.sh    // Shell script to manage testcases
   └── README.md
 ```
 ## Usage Guide
@@ -81,5 +81,5 @@ Run the program with
 ### Utility Scripts
 To quickly run, clean, or verify testcases, use `run.sh`.
 ```
-./run.sh
+./run.sh <case|all> [check|clean|valgrind]
 ```
