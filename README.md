@@ -4,6 +4,9 @@ NYCU 2025 Spring Advanced Algorithms
 
 Lecturer: 林柏宏 Mark Po-Hung Lin
 
+## Textbook
+- [T. H. Cormen, C. E. Leiserson, R. L. Rivest, and C. Stein, *Introduction to Algorithms*, 4th ed. MIT Press, 2022.](https://www.google.com.tw/books/edition/Introduction_to_Algorithms_fourth_editio/drZNEAAAQBAJ?hl=zh-TW&gbpv=0)
+
 ## Lecture
 - Intro
 - Sorting
