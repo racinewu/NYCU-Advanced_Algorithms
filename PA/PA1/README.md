@@ -49,10 +49,10 @@ Given a set $C$ of $n$ chords in a circle, where endpoints are numbered from $0$
 ```
 
 ## Environment:
-|  Operating System  |  Compiler Version  | C++ Standard |
-|--------------------|--------------------|--------------|
-| Ubuntu 22.04       |    gcc 9.5.0       |     C++17    |
-| Windows 11 (MSYS2) |    gcc 15.1.0      |     C++17    |
+|  Operating System  |   Compiler Version    | C++ Standard |
+|--------------------|-----------------------|--------------|
+| Ubuntu 22.04       |       gcc 9.5.0       |     C++17    |
+| Windows 11         |  gcc 15.1.0 (UCRT64)  |     C++17    |
 
 ## Directory Structure
 ```
